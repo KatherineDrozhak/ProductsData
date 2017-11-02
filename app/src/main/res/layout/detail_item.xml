@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_transaction_sum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:textAppearance="?android:attr/textAppearanceListItem">
+
+        <TextView
+            android:id="@+id/sum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_8dp"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceListItem"/>
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/background_dark"/>
+
+        <TextView
+            android:id="@+id/sum_gbp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_8dp"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceListItem"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignBottom="@id/layout_transaction_sum"
+        android:background="@android:color/background_dark"/>
+
+</RelativeLayout>

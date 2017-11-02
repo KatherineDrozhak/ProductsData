@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/layout_detail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/product_transaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        android:textSize="@dimen/size_20sp"
+        tools:text="Транзакции для"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/product_transaction"
+        android:background="@android:color/background_dark"/>
+
+    <TextView
+        android:id="@+id/all_sum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceListItem"
+        android:textSize="@dimen/size_20sp"
+        tools:text="Всего: "/>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/all_sum"
+        android:background="@android:color/background_dark"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/detail_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view2"/>
+
+    <include
+        android:id="@+id/not_available_layout"
+        layout="@layout/not_available_activity"/>
+
+</RelativeLayout>

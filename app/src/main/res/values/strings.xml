@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ProductsData</string>
+    <string name="product_name">Название продукта</string>
+    <string name="transactions_value">" транзакций"</string>
+    <string name="transactions">Транзакции</string>
+    <string name="transaction_for_product">"Транзакции для: "</string>
+    <string name="all_sum">"Всего £: "</string>
+    <string name="not_available_text">Данные недоступны</string>
+</resources>
